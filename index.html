@@ -1,0 +1,460 @@
+<!-- Giving myself 1hr and some to code this.
+    I don't know if I can code the remainder of this due to busy schedule if 
+    it is still here it means I didn't get the time to finish it.  -->
+
+<!-- Things left to do:
+1.create a header/or use box shadow to create the illusion of it 
+2. comment out the calc and readd it to the header
+3.work on the last bit of the page with the spans and aligning the text  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+<title>Teamleader-Pricing</title>
+</head>
+<body>
+<main>
+<div x-data="{ open: false, submitClick: false }" class="w-full md:w-3/4 mx-auto py-6 p-5">
+<div class="sm:px-0 bg-white rounded-lg border">
+<div class="max-w-full mx-auto py-6 p-5 sm:px-0 bg-white rounded-lg">
+<section>
+<!-- Pricing cards -->
+<div class="">
+<h1 class="title">
+<span class="font-bold">Meer omzet. Voor één vaste prijs.</span> 
+</h1>
+<br>
+<p class="review"> <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> 
+<span class="fa fa-star checked"></span> 
+Dankzij onze sterke support geven klanten ons 4,6/5 op Google reviews  <img  alt="google" src="google.png" width="70" height="25">
+</p>
+</div> 
+<!-- br for the quick spacing -->
+<br><br><br>
+
+<!-- Commented out toggle since I wasn't able to finish it's section. -->
+
+<!-- <div class="toggle"> Bereken je kostprijs 
+    <span class="toggle_move">
+    Per kwartaal
+    </span>
+    <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"> </span>
+    </label>    
+    <span class="toggle_movers">
+    Per jaar (-15%)
+    </span>
+    </div>   -->
+
+
+<ul class="price_content-desktop l-grid"> 
+<header class="price-card_header">
+<h3 class="price-card_title">Go</h3>
+<p class="price-card_description">
+Alle essentials om slimmer te werken.
+</p>
+<p class="price-card-price">
+<span class="price-card-price-prefix">
+€
+</span>
+<span class="price-card-price-container">
+<span class="price-card-price-number">50 </span>
+</span>
+</p>
+<p class="price-card-current-user"> 
+<span class="price-card-current-user-amount">2</span>
+gebruikers inbegrepen
+</p>
+<p><button class="btn" onclick="clickCounter()" type="button-text">Probeer nu gratis</button></p>
+</p>
+</header>
+<!-- Move section -->
+<header class="price-card_header">
+<h3 class="price-card_title">Move</h3>
+<p class="price-card_description">
+Nog meer controle over je sales en workflow. 
+</p>
+<p class="price-card-price">
+<span class="price-card-price-prefix">
+€
+</span>
+<span class="price-card-price-container">
+<span class="price-card-price-number">60 </span>
+</span>
+</p>
+<p class="price-card-current-user"> 
+<span class="price-card-current-user-amount">2</span>
+gebruikers inbegrepen
+</p>
+<p><button class="btn" onclick="clickCounter()" type="button-text">Probeer nu gratis</button></p>
+</p>
+</header>
+
+<header class="price-card_header">
+<h3 class="price-card_title">Boost</h3>
+<p class="price-card_description">
+Het complete workmanagement-pakket.
+</p>
+<p class="price-card-price">
+<span class="price-card-price-prefix">
+€
+</span>
+<span class="price-card-price-container">
+<span class="price-card-price-number">80 </span>
+</p>
+<p class="price-card-current-user"> 
+<span class="price-card-current-user-amount">2</span>
+gebruikers inbegrepen
+</p>
+<p><button class="btn" onclick="clickCounter()" type="button-text">Probeer nu gratis</button></p>
+</p>
+</ul> 
+</header>
+<!-- br to do it quickly -->
+<br> <br><br>
+<div class="text-align">
+<h2 class="hope">
+ Al 12.000 klanten werken slimmer en efficiënter met Teamleader:
+</h2>
+</div>
+<!-- Commented out bottom part since I did not finish it -->
+<!-- <span id="span1" style="float: left;"><h4 class="bob "> 8% </h4> minder administratie per week <br> <a href="#">
+lees meer
+</a>
+</span>  -->
+<span id="span2" style="float: left;"><h4 class="bob"> 10% </h4> meer omzet <br><a href="#">
+lees meer
+</a>
+<!-- </span> 
+<span id="span3" style="float:left "><h4 class="bob"> 60% </h4> meer cross sales <br> <a href="#">
+lees meer
+</a>
+</span> 
+<span id="span4" style="float: left"><h4 class="bob"> 20% </h4> meer tevreden klanten <br>  <a href="#">
+lees meer
+</a>
+</span> -->
+
+
+
+<style>
+ 
+
+.bob{
+font-family: 'Work Sans', sans-serif;
+font-size: 45px;
+}
+.hope{
+    text-align: left;
+   
+
+}
+.text-align{
+font-family: 'Work Sans', sans-serif;
+line-height: 5px;
+
+}
+.checked {
+  color: orange;
+}
+.title{
+    text-align: center;   
+}
+.review{
+    font-size: 15px;
+    text-align: center;
+}
+.font-bold{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    
+   
+}
+.img.w-24{
+    font-size: 10px;
+}
+.pricing_item{
+ width: 33.33333%;   
+}
+
+.l-grid{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 240px;
+}
+
+.btn{
+   
+   padding: 1.2rem 3.8rem;
+   font-size: 2.1rem;
+   line-height: 3rem;
+   font-weight: 500;
+   
+   display: inline-block;
+   
+   text-decoration: none;
+   justify-content: center;
+   text-align: center;
+   color: #fff;
+   background-color: #4f1fff;
+   border: 0.2rem solid #4f1fff;
+   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+   cursor: pointer;
+}
+.pricing_calculator{
+  flex-wrap: wrap;  
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
+  /* margin: 2.4rem -2.4rem -0.8rem;  */
+  margin-left: 50px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block; 
+  width: 60px;
+  height: 34px;  
+  
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:  #4f1fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px  #4f1fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.toggle_move{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: #c0cdde;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.input{
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    text-rendering: auto;
+    color: -internal-light-dark(black,white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+    font: 400 13.3333px Arial;
+}
+.input[type="checkbox" i]{
+background-color: initial;
+cursor: default;
+appearance: auto;
+border: initial;
+box-sizing: border-box;
+ padding: 0;
+}
+
+
+.toggle_movers{
+    color:#1b1e22;
+    /* font-weight: 600; */
+    font-size: 1.2rem;
+    line-height: 3rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn{
+   
+   padding: 1.2rem 3.8rem;
+   font-size: 2.1rem;
+   line-height: 3rem;
+   font-weight: 500;
+   
+   display: inline-block;
+   
+   text-decoration: none;
+   justify-content: center;
+   text-align: center;
+   color: #fff;
+   background-color: #4f1fff;
+   border: 0.2rem solid #4f1fff;
+   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.price-card{
+    height: 100%;
+}
+.price-card-move{
+    height: 100%;
+    
+}
+.price-card_header{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    padding: 2.4rem;
+    border-bottom: 0.1rem solid #e4e4e7;
+    box-shadow: 0px 3px 10px 0.1px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    
+}
+
+.price_content {
+    box-shadow: 0 0 2.6rem rgb(0 0 0 / 6%);
+    /* background-color: #fff; */
+}
+
+
+
+.price-card_title{
+font-family: 'Work Sans', sans-serif;
+font-weight: 700;
+font-size: 2.1rem;
+line-height: 2.7rem;
+text-transform: uppercase;
+
+}
+
+.price-card_description{
+min-height: 11rem;
+margin-top: 0.8rem;
+line-height: 2rem;
+font-size: 1.2rem;
+}
+
+.price-card-price{
+margin-bottom: 10px;
+margin-bottom: -30px;
+
+}
+
+.price-card-price-prefix{
+font-weight: 700;
+font-size: 1.9rem;
+line-height: 4rem;
+
+}
+
+.price-card-price-container{
+display: inline-flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+
+.price-card-price-number{
+font-weight: 700;
+font-size: 2.5rem;
+line-height: 4rem;
+
+}
+
+.price-card-current-user{
+font-weight: 350;
+font-size: 1.2rem;
+line-height: 2.2rem;
+color: #647990;
+}
+
+.price-card-current-user-amount{
+margin: 0 0.35rem 0 0;
+font-weight: 350;
+font-size: 1.2rem;
+line-height: 2.2rem;
+color: #647990;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>               
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+</body>
+</html>

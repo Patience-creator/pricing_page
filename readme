@@ -1,0 +1,46 @@
+Commented out might use it if I have time to fix it.
+<!-- <div class="toggle">
+<span class="toggle_move">
+Per kwartaal
+</span>
+<label class="switch">
+<input type="checkbox" checked>
+<span class="slider round"> </span>
+</label>    
+<span class="toggle_movers">
+Per jaar (-15%)
+</span>
+</div>  -->
+<!-- <label class="price_count">
+<span class="price_counter">
+voor
+</span>
+<div class="price_track_count">
+<div class="price_counter-cont">
+<button clas="btn-min">
+<span class="button-min-icon" aria-hidden="true" focusable="false">
+</span> 
+<span class="button_text">
+Subtract
+</span>    
+</button>
+<div class="counter_input">
+<input class="input_field" id="counter" type="number" placeholder="--" 
+value min="2" max="200" step="1" style="padding-right: 54.7656px;">
+<span class="input_seats"> gebruikers</span>
+</div>
+<button class="button_plus">
+<span class= "btn-icon" aria-hidden="true" focusable="false">
+</span>
+<span class="button_text">
+Add
+</span>
+</button>
+</div>
+
+</div>
+</label>
+</div>
+</div>
+</header>   
+</div> -->
